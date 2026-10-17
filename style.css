@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+    :root {
+      --bg1: #0b1020;
+      --bg2: #141d35;
+      --panel: rgba(16, 20, 38, 0.78);
+      --panel-border: rgba(137, 167, 255, 0.45);
+      --text: #ecf3ff;
+      --muted: #b6caef;
+      --accent: #7cf3ff;
+      --accent2: #ffb454;
+      --danger: #ff6b7d;
+      --good: #7dffb4;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, rgba(4, 40, 66, 0), rgba(110,70,61,0), rgba(192,192,192,0)),
+                  url('https://wallpapercave.com/wp/wp2709706.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: var(--text);
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      overflow: auto;
+      font-family: Comfortaa;
+    }
+
+    .game-shell {
+      width: min(92vw, 700px);
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: 18px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+      backdrop-filter: blur(12px);
+      overflow: hidden;
+      position: relative;
+}
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      background: rgba(10, 13, 24, 0.65);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .title {
+      font-size: clamp(1.2rem, 2vw, 1.9rem);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-family: Helvetica;
+    }
+
+    .stats {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-family: Helvetica;
+    }
+
+    .badge {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .badge strong {
+      color: var(--text);
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: linear-gradient(180deg, rgba(18, 29, 58, 0.9), rgba(7, 11, 21, 0.96));
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      background: rgba(12, 16, 30, 0.7);
+    }
+
+    .help {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    button {
+      border: none;
+      border-radius: 10px;
+      padding: 10px 16px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+      background: linear-gradient(135deg, var(--accent), #58a6ff);
+      color: #06121f;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 8px 18px rgba(82, 156, 255, 0.35);
+    }
+    /* Hide buttons on computers by default */
+.mobile-btns {
+  display: none;
+}
+
+/* Show buttons only when the screen is smaller than 768 pixels */
+@media (max-width: 2360px) {
+  .mobile-btns {
+    display: flex;
+    gap: 10px;
+  }
+}
+    button:hover {
+      transform: translateY(-1px);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }

@@ -12,7 +12,7 @@ diverse, inclusive, and healthy community.
 
 We believe that the world was made in 6 days, and on the last day, God made mankind. We strive to communicate the message of salvation 
 through all that we do, whether it is through web design, game development, or explicit evangelization. Therefore, behavior 
-that does not align with what God and the Bible says is unacceptable. However, our team do not discriminate based on religion or race.
+that does not align with what God and the Bible says is unacceptable. However, our team does not and will not discriminate based on religion or race.
 
 ## Our Standards
 

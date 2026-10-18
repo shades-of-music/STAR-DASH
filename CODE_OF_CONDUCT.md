@@ -11,8 +11,8 @@ diverse, inclusive, and healthy community.
 ## Our Beliefs
 
 We believe that the world was made in 6 days, and on the last day, God made mankind. We strive to communicate the message of salvation 
-through all that we do, whether it is through web design, game development, or explicit evangelization. Therefore, behavior 
-that does not align with what God and the Bible says is unacceptable. However, our team does not and will not discriminate based on religion or race.
+through all that we do, whether it is through web design, game development, or direct evangelization. Therefore, behavior 
+that does not align with what God and the Bible says is unacceptable. However, members of all religions are welcome!
 
 ## Our Standards
 
@@ -103,7 +103,8 @@ sustained inappropriate behavior.
 **Consequence**: A temporary ban from any sort of interaction or public
 communication with the community for a specified period of time. No public or
 private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
+with those enforcing the Code of Conduct, is allowed during this period, unless when contesting a ban, including permanent bans,
+which are defined in the section below.
 Violating these terms may lead to a permanent ban.
 
 ### 4. Permanent Ban

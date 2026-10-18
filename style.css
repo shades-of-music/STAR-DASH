@@ -67,16 +67,16 @@
 	  gap: 12px;
 	  flex-wrap: wrap;
 	  justify-content: flex-end;
-	  font-family: Helvetica;
+	  font-family: Comfortaa;
 	}
 
 	.badge {
-	  background: rgba(255, 255, 255, 0.1);
-	  border: 1px solid rgba(255,255,255,0.08);
+	  background: rgba(88, 166, 255, 1);
+	  border: 1px solid rgba(88, 166, 255,0.08);
 	  border-radius: 999px;
 	  padding: 6px 10px;
 	  font-size: 0.8rem;
-	  color: var(--muted);
+	  color: black;
 	}
 
 	.badge strong {
@@ -106,9 +106,11 @@
 	}
 	 .button{
 			padding: 50px;
-			border-radius: 170px;
+			border-radius: 75px;
 			font-size: 30px;
 			margin: 20px;
+			height: 150px;
+			width: 150px;
 	 }
 	button {
 	  border: none;
@@ -147,4 +149,3 @@ span{
 	button:active {
 	  transform: translateY(0);
 	}
-	

@@ -1,4 +1,3 @@
-
 alert("as with all of my projects, i would like to remind you that God loves you, and He sent his son to die for you so that you could spend eternity with him! ❤️");
     alert("you can find me on Sololearn at https://www.sololearn.com/en/profile/20511470");
     alert("ps made with HTML, CSS, JS; repository is on GitHub, website hosted by Netlify; licensed under Creative Commons license CC-BY-NC-SA");

@@ -375,14 +375,14 @@ alert("as with all of my projects, i would like to remind you that God loves you
 	}
 
 	function drawAnimations() {
-	  if (game.has100Animation > 0) {
+	  if (game.has350Animation > 0) {
 		ctx.save();
 		ctx.font = '700 36px Arial';
 		ctx.fillStyle = '#7dffb4';
 		ctx.textAlign = 'center';
 		ctx.shadowColor = '#7dffb4';
 		ctx.shadowBlur = 15;
-		ctx.fillText('⭐ 100 POINTS! AWESOME! ⭐', canvas.width / 2, 120);
+		ctx.fillText('⭐ 350 POINTSSSS! AWESOME! ⭐', canvas.width / 2, 120);
 		ctx.restore();
 	  }
 	}

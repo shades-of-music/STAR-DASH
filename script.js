@@ -254,7 +254,7 @@ alert("as with all of my projects, i would like to remind you that God loves you
 		if (dist < as.radius + 18) {
 		  game.allStars.splice(i, 1);
 		  game.score += 50;
-		  game.shieldTime = 5.0; // 5 seconds shield
+		  game.shieldTime = 10.0; // 10 seconds shield
 		  playTinkle();
 		  createBurst(as.x, as.y, '#ffb454', 25);
 		  if (game.score > game.best) {

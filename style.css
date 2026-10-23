@@ -24,25 +24,47 @@
 	  background-size: cover;
 	  background-attachment: fixed;
 	  color: var(--text);
-	  overflow: auto;
+	  overflow-x: hidden;
+	  overflow-y: auto
 	}
 
 	body {
 	  display: grid;
 	  place-items: center;
-	  overflow: auto;
 	  font-family: Space Mono;
 	}
 
 	.game-shell {
-	  width: min(92vw, 700px);
+	  width: 100vw;
+	  max-width: 90%;
+	  min-height: 80vh;
 	  background: var(--panel);
 	  border: 1px solid var(--panel-border);
 	  border-radius: 18px;
 	  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
 	  backdrop-filter: blur(12px);
-	  overflow: hidden;
+	  overflow: scroll;
 	  position: relative;
+	  text-align: center;
+	  margin: 30px;
+}	
+.help-icon {
+  display: none; /* Hidden on large screens by default */
+}
+
+@media (max-width: 430px) {
+  .help {
+	display: none; /* Hides the long text on phones */
+  }
+  .help-icon {
+	display: block;
+	background: none;
+	color: var(--text);
+	box-shadow: none; /* Shows the question mark button on phones */
+  }
+  .game-shell{
+	  overflow-y: scroll;
+  }
 }
 
 	.topbar {
@@ -76,6 +98,7 @@
 	.thebutton{
 		padding: 30px;
 		font-size: 20px;
+		margin: 10px;
 	}
 
 	.badge {
@@ -113,12 +136,15 @@
 	  font-size: 0.9rem;
 	}
 	 .button{
-			padding: 50px;
-			border-radius: 75px;
+			padding: 2vw;
+			border-radius: 14vw;
+			max-border-radius: 75;
 			font-size: 30px;
-			margin: 20px;
-			height: 150px;
-			width: 150px;
+			margin: 15px;
+			height: 28vw;
+			max-height: 150px;
+			width: 28vw;
+			max-width: 150px;
 			font-family: Arial;
 	 }
 	button {
@@ -144,12 +170,28 @@ span{
 	color: black;
 	font-size: 1.7vw;
 }
-
+.sup{
+	font-family: Space Mono;
+	color: var(--accent);
+	font-size: 25px;
+}
 /* Show buttons only when the screen is smaller than 768 pixels */
-@media (max-width: 2360px) {
+@media (max-width: 2796px) {
   .mobile-btns {
 	display: flex;
 	gap: 10px;
+	justify-content: space-between; /* Pushes the buttons to opposite sides */
+ 	width: 100%;
+	max-width: 95%;				  /* Takes up the full width */
+ 	padding: 10px;
+  }
+  body{
+	  overflow-x: hidden;
+	  overflow-y: visible;
+	  padding-right: 10px;
+  }
+  .game-shell{
+	  margin: 10px;
   }
 }
 	button:hover {
@@ -159,4 +201,3 @@ span{
 	button:active {
 	  transform: translateY(0);
 	}
-	
